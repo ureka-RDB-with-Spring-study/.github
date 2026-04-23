@@ -55,7 +55,7 @@
 
 ### 학습 후 기록
 
-1. Organization에 각자 REPO 생성 (REPO명: rdb-with-spring-study-by-깃허브아이디)
+1. Organization에 각자 REPO 생성 (REPO명: 깃허브아이디-rdb-with-spring-study)
 2. 주제마다 브런치 생성해서 커밋 및 푸시 (ex. branch: index, transaction)
 3. 각자 REPO의 WIKI에 주제마다 학습 글 기록 (주차마다 Page 생성해서 WIKI 사이드바에 기재: 예시 스터디장 레포에 기재)
 	1. 이론 
