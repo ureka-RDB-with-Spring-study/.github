@@ -56,7 +56,7 @@
 * 순수 RDB 비용에 가깝게 계측할 경우, 동일 VPC에 EC2와 RDS를 생성해서 Private IP로 통신 (비용 무료)
 * 네트워크 비용도 계측에 포함시켜야될 경우, 로컬에서 VPC로 통신 필요 (비용 유료)
 
-### 주차별 학습 사이클 참고 예시: [RDB 중심 스터디 with Spring: 학습 사이클 예시](https://github.com/ureca-RDB-with-Spring-study/.github/wiki)
+### 학습 사이클 참고 예시: [주차별 학습 사이클 예시 바로가기](https://github.com/ureca-RDB-with-Spring-study/.github/wiki)
 
 - **이론**: "`EXPLAIN`의 `type`이 `ALL`이면 풀스캔, `range`면 인덱스 범위 스캔, `ref`면 인덱스 정확 매치다. `ALL`이 나오는 쿼리는 의심부터 해야 한다."
 - **실습**: "`customers` 테이블에 100만 건을 넣고, 이메일로 조회하는 쿼리를 돌려보자. 인덱스 전/후의 `EXPLAIN`과 실제 시간을 비교한다."
