@@ -42,6 +42,7 @@
 | 11  | 팀프로젝트: 스키마 발표 & 합의                                                     | 스키마 발표 비교 → 팀 스키마 합의 → 통합 DDL                                                    |     —      |                      |
 | 12  | 팀프로젝트: 최종 완성                                                           | 각 도메인별 API 리팩토링 & 병합 → EC2/RDS 배포, 회고                                            |     —      |                      |
 
+
 ### 학습 사이클 (이론 → 실습 → 분석 → 회고)
 
 | 단계  | 목적                                                               |
@@ -55,7 +56,7 @@
 * 순수 RDB 비용에 가깝게 계측할 경우, 동일 VPC에 EC2와 RDS를 생성해서 Private IP로 통신 (비용 무료)
 * 네트워크 비용도 계측에 포함시켜야될 경우, 로컬에서 VPC로 통신 필요 (비용 유료)
 
-### 주차별 학습 사이클 참고 예시: [RDB 중심 스터디 with Spring: 학습 사이클 예시](https://github.com/ureka-RDB-with-Spring-study/.github/wiki)
+### 주차별 학습 사이클 참고 예시: [RDB 중심 스터디 with Spring: 학습 사이클 예시](https://github.com/ureca-RDB-with-Spring-study/.github/wiki)
 
 - **이론**: "`EXPLAIN`의 `type`이 `ALL`이면 풀스캔, `range`면 인덱스 범위 스캔, `ref`면 인덱스 정확 매치다. `ALL`이 나오는 쿼리는 의심부터 해야 한다."
 - **실습**: "`customers` 테이블에 100만 건을 넣고, 이메일로 조회하는 쿼리를 돌려보자. 인덱스 전/후의 `EXPLAIN`과 실제 시간을 비교한다."
@@ -66,7 +67,7 @@
 
 - **DB**: MySQL
 - **애플리케이션**: Java, Spring 
-- **인프라**: AWS EC2 & RDS (부하 테스트를 위해서 즉각 배포)
+- **인프라**: AWS EC2 & RDS (성능 테스트를 위해서 1주차부터 배포)
 - **CI/CD**: Guthub Actions
 
 ---
@@ -74,9 +75,9 @@
 
 ### 학습 후 기록
 
-1. Organization에 각자 REPO 생성
+1. Organization에 각자 REPO 생성 (REPO명: 깃허브아이디-rdb-with-spring)
 2. 주제마다 브런치 생성해서 커밋 및 푸시 (ex. branch: index, transaction)
-3. 각자 REPO의 WIKI에 주제마다 학습 글 기록 (주차마다 Page 생성해서 WIKI 사이드바에 기재: 예시 스터디장 레포에 기재)
+3. 각자 REPO의 WIKI에 주제마다 학습 글 기록 (주차마다 Page 생성해서 WIKI 사이드바에 기재: )
 	1. 이론 
 	2. 실습 (스키마 포함) 
 	3. 분석
@@ -104,3 +105,4 @@
 #### 장점: 무료인데 고퀄
 
 * [쉬운 코드 데이터베이스 유튜브 (무료)](https://www.youtube.com/watch?v=aL0XXc1yGPs&list=PLcXyemr8ZeoREWGhhZi5FZs6cvymjIBVe)
+
