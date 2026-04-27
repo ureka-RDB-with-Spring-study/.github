@@ -52,10 +52,11 @@
 | 분석  | 실습 결과가 왜 그렇게 나왔는지 원리 이해/원인 추적 (`EXPLAIN`, 로그, 실행 시간 근거 제시)       |
 | 회고  | 스스로 묻고 답하기 ("다르게 했다면?", "어떤 상황에서 해결책이 적합할지?", "실무에서는 어떻게 할지?" 등) |
 
-**'실습' 단계에서 더미데이터 적재 후 부하테스트 적극 활용 추천**: EC2 (부하 테스트 툴) ↔ EC2 (Spring Application) ↔ RDS (MySQL)
+****'실습' 단계에서 더미데이터 적재 후 부하테스트 적극 활용 추천**: EC2 (API 테스트 툴) ↔ EC2 (Spring Application) ↔ RDS (MySQL)
 * 순수 RDB 비용에 가깝게 계측할 경우, 동일 VPC에 EC2(Client)와 EC2(Server)생성해서 Private IP로 통신 (비용 무료)
 * 네트워크 비용도 계측에 포함시켜야될 경우, 로컬(Client)에서 EC2(Server)로 통신 필요 (비용 유료)
 * 비용 부담시 로컬 환경에서 수행 가능 (단, OS에 다수의 프로세스 실행으로 계측의 오차가 발생)
+
 
 ### 학습 사이클 참고 예시: [주차별 학습 사이클 예시 바로가기](https://github.com/ureca-RDB-with-Spring-study/.github/wiki)
 
@@ -66,10 +67,16 @@
 
 ### 기술 스택
 
-- **DB**: MySQL
-- **애플리케이션**: Java, Spring 
-- **인프라**: AWS EC2 & RDS (성능 테스트를 위해서 1주차부터 배포)
-- **CI/CD**: Guthub Actions
+| 구분                   | 추천 버전                   | 근거                                              |
+| -------------------- | ----------------------- | ----------------------------------------------- |
+| **OS**               | Ubuntu 24.04 LTS        | 2029년까지 공식 지원                                   |
+| **Java**             | Java 21 (LTS            | 안정성 높고 실무에서 빠르게 증가중                             |
+| **Spring Boot**      | 4.0.5                   | 3.5 버전은 2026년 6월 30일 지원 종료 예정                   |
+| **Spring Framework** | 7.0.x                   | Spring Boot 4.x 내장 자동 적용                        |
+| **MySQL**            | 8.4.9 LTS               | 8.0 EOL 도달, 신규 8.4.9 LTS 권장                     |
+| **CI/CD**            | Github Actions          | 공개 저장소 무료, GitHub과 완벽 통합, YAML 기반 설정            |
+| **Container**        | Docker + Docker Compose | 개발/테스트/운영 환경 동일                                 |
+| **Load Test Tool**   | K6                      | 가볍고 빠르며 CLI 환경에서 스크립트 작성 용이, 웹으로 실시간 대시보드 확인 가능 |
 
 ---
 ## 스터디 진행 방식
