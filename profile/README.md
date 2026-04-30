@@ -76,7 +76,6 @@
 | **CI/CD**                        | Github Actions                                                                                           | 공개 저장소 무료, GitHub과 완벽 통합, YAML 기반 설정                              |
 | **Container**                    | Docker + Docker Compose                                                                                  | 개발/테스트/운영 환경 동일                                                   |
 | **Load Test Tool**               | K6: [참고 강의](https://www.youtube.com/watch?v=wF8RPQWUeHU&list=PLtUgHNmvcs6qAqWz-UhH-_ploSbK2eHwG&index=7) | 가볍고 빠르며 CLI 환경에서 스크립트 작성 용이, 웹으로 실시간 대시보드 확인 가능                   |
-| **Infrastructure as Code (IaC)** | Terraform                                                                                                | 인프라를 코드로 관리, 멀티 클라우드 지원 (AWS, GCP, Azure 동시 관리), 방대한 커뮤니티와 모듈 생태계 |
 
 ---
 
