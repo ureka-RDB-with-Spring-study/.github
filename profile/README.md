@@ -67,18 +67,19 @@
 
 ### 기술 스택
 
-| 구분                   | 추천 버전                                                                                                                                   | 근거                                              |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **OS**               | Ubuntu 24.04 LTS                                                                                                                        | 2029년까지 공식 지원                                   |
-| **Java**             | Java 21 (LTS                                                                                                                            | 안정성 높고 실무에서 빠르게 증가중                             |
-| **Spring Boot**      | 4.0.5                                                                                                                                   | 3.5 버전은 2026년 6월 30일 지원 종료 예정                   |
-| **Spring Framework** | 7.0.x                                                                                                                                   | Spring Boot 4.x 내장 자동 적용                        |
-| **MySQL**            | 8.4.9 LTS                                                                                                                               | 8.0 EOL 도달, 신규 8.4.9 LTS 권장                     |
-| **CI/CD**            | Github Actions                                                                                                                          | 공개 저장소 무료, GitHub과 완벽 통합, YAML 기반 설정            |
-| **Container**        | Docker + Docker Compose                                                                                                                 | 개발/테스트/운영 환경 동일                                 |
-| **Load Test Tool**   | K6 (충분한 부하를 위해서는 EC2-t3a.small 필요) [참고 강의](https://www.youtube.com/watch?v=wF8RPQWUeHU&list=PLtUgHNmvcs6qAqWz-UhH-_ploSbK2eHwG&index=7) | 가볍고 빠르며 CLI 환경에서 스크립트 작성 용이, 웹으로 실시간 대시보드 확인 가능 |
+| 구분                               | 추천 버전                                                                                                    | 근거                                                                |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **OS**                           | Ubuntu 22.04 LTS                                                                                         | 안정성이 높은 우분투 버전                                                    |
+| **Java**                         | Java 21 LTS                                                                                              | 안정성 높고 가상 스레드 지원                                                  |
+| **Spring Boot**                  | 3.5.14                                                                                                   | 안정성을 위해 4.x보다 3.x 사용                                              |
+| **MySQL**                        | 8.4.8                                                                                                    | 8.0 EOL 도달, 신규 8.4.8                                              |
+| **CI/CD**                        | Github Actions                                                                                           | 공개 저장소 무료, GitHub과 완벽 통합, YAML 기반 설정                              |
+| **Container**                    | Docker + Docker Compose                                                                                  | 개발/테스트/운영 환경 동일                                                   |
+| **Load Test Tool**               | K6: [참고 강의](https://www.youtube.com/watch?v=wF8RPQWUeHU&list=PLtUgHNmvcs6qAqWz-UhH-_ploSbK2eHwG&index=7) | 가볍고 빠르며 CLI 환경에서 스크립트 작성 용이, 웹으로 실시간 대시보드 확인 가능                   |
+| **Infrastructure as Code (IaC)** | Terraform                                                                                                | 인프라를 코드로 관리, 멀티 클라우드 지원 (AWS, GCP, Azure 동시 관리), 방대한 커뮤니티와 모듈 생태계 |
 
 ---
+
 ## 스터디 진행 방식
 
 ### 학습 후 기록
